@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll and Github Pages!"
 date:   2020-12-05 15:33:43 -0600
 categories: jekyll update
 # naming: `YEAR-MONTH-DAY-title.MARKUP`
