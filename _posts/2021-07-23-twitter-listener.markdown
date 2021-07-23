@@ -54,7 +54,7 @@ with open(file) as f:
 
 idiom.  This is because we want the file handle to be available to the next function:
 
-<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=22:30"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=21:30"></script>
 
 This function is called when the HUP (hangup) signal is received.
 Signals are kind of cool because unlike ordinary Python function calls
@@ -78,14 +78,14 @@ received json from Twitter to the logfile:
 The following function takes the stream and a list of twitter users
 and filters the stream bast on this followlist:
 
-<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=40:50"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=39:50"></script>
 
 
 The main function below sets up the signal handler, the Twitter
 credentials, gets the users that the `abestockmon` user follows,
 creates the stream, and then runs `filter` on the stream:
 
-<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=51:68"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=50:68"></script>
 
 
 If this running script did not receive any signal from outside, it
