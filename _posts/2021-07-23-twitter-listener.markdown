@@ -21,7 +21,7 @@ First, let's look at the python script. the code is in the
 file](https://github.com/abecode/twitter-logger/blob/main/listen-and-log.py). The
 first 19 lines are imports and environment variables:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=0:20"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=0:20"></script>
 
 Tweepy is the library that actually connects to Twitter, the json
 library parses the json respons, the os library is used for retrieving
@@ -54,7 +54,7 @@ with open(file) as f:
 
 idiom.  This is because we want the file handle to be available to the next function:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=22:30"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=22:30"></script>
 
 This function is called when the HUP (hangup) signal is received.
 Signals are kind of cool because unlike ordinary Python function calls
@@ -73,19 +73,19 @@ script (the old file is renamed to `twitter.log.gz.1`).
 The next chunk defines a stream listener class that simply writes the
 received json from Twitter to the logfile:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=32:39"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=32:39"></script>
 
 The following function takes the stream and a list of twitter users
 and filters the stream bast on this followlist:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=40:50"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=40:50"></script>
 
 
 The main function below sets up the signal handler, the Twitter
 credentials, gets the users that the `abestockmon` user follows,
 creates the stream, and then runs `filter` on the stream:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=51:68"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.py?slice=51:68"></script>
 
 
 If this running script did not receive any signal from outside, it
@@ -100,7 +100,7 @@ This is what I did when I was testing the script, but logrotate does
 it automatically and the logrotation is specified declaratively in the
 logrotate.conf file:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/logrotate.conf"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/logrotate.conf"></script>
 
 This config file tells the logrotate UNIX/Linux command where the
 logfile is, minimally how often to rotate it, what the maximum size
@@ -118,7 +118,7 @@ the night and I wouldn't know about it so I wanted to make sure that
 it restarted automatically.  To do this, I created a Systemd service
 unit file:
 
-<script src="http://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.service"></script>
+<script src="https://gist-it.appspot.com/http://github.com/abecode/twitter-logger/raw/main/listen-and-log.service"></script>
 
 A service unit file will make the script run as a daemon in the
 background. It reads an enviroment variable file and it will restart
