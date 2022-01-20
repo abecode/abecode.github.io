@@ -10,9 +10,11 @@ categories: BERT NLP writing conferences emo20q annotation paraphrase
 
 I recently got a paper [BERT-Assisted Semantic Annotation Correction
 for Emotion-Related Questions](/assets/2022007804.pdf) accepted at the
-[ARDUOUS 2022 conference (Annotation of useR Data for UbiquitOUs
-Systems)](https://text2hbm.org/arduous/).  It was going to be in Pisa,
-Italy, but unfortunately due to Covid it is now virtual/online.
+[ARDUOUS 2022 workshop (Annotation of useR Data for UbiquitOUs
+Systems)](https://text2hbm.org/arduous/) of the [IEEE Pervasive
+Computing (PerCom) conference](https://www.percom.org/).  It was going
+to be in Pisa, Italy, but unfortunately due to Covid it is now
+virtual/online.
 
 I wanted to make a short post to describe the paper and share some
 resources that can be used to replicate it.
