@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="obs-teaching-setup.svg"
-   inkscape:export-filename="/Users/kaze7539/Dropbox/org/reference/video-article/obs-teaching-setup.png"
+   inkscape:export-filename="/Users/kaze7539/proj/abecode.github.io/assets/obs-teaching-setup.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -73,7 +73,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="403.3187"
+     inkscape:cx="172.60441"
      inkscape:cy="380.58158"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -825,7 +825,9 @@
        x="971.42859"
        y="215.21935"
        id="text3515"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3517"
          x="971.42859"
