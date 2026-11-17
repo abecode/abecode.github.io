@@ -1,0 +1,17 @@
+---
+title:  "Using Django to Teach Databases"
+categories: [django, stthomas, databases, 630]
+date: 2021-11-05
+aliases:
+  - /django/stthomas/databases/630/2021/11/05/example-django-models-for-SEIS-630.html
+---
+
+
+I've been trying using Django's ORM to teach some database topics:
+object-relational-mapping, foreign keys, automatically generated
+intersection tables vs association tables (Django model "through"
+attribute), forward and reverse engineering, and migrations.  [Here's
+a basic django model that I've been using in the class (SEIS
+630)](https://github.com/abecode/630_django_example).  You can check
+out the code but it's better to go through the steps using
+`django-admin` and `manage.py`.

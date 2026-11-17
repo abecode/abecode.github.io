@@ -1,0 +1,58 @@
+---
+title:  "Welcome to Jekyll and Github Pages!"
+date: 2020-12-05
+categories: [jekyll, update]
+aliases:
+  - /jekyll/update/2020/12/05/welcome-to-jekyll.html
+---
+
+
+This was my first time using Jekyll after using Github Pages
+(gh-pages) a couple of times for several projects, e.g. generating
+[some pages to display Chinese emo20q
+data](https://abecode.github.io/emo20q-cn/), which were generated
+programatically from the data into the default gh-pages and [a site I
+use for teaching SEIS 631](https://abecode.github.io/631-rtopics/),
+the stats and R data analysis at UST GPS, which was created using
+RStudio and RMarkdown.
+
+
+I'll also test out code snippets:
+
+I don't use Ruby too much but it's the language of Jekyll:
+
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+```
+
+
+Python, my main language:
+
+```python
+def print_hi(name):
+  print(f"hi {name}")
+
+print_hi('Tom')
+#=> print 'hi Tom' to STDOUT.
+```
+
+R, my recent go-to language and what I've been teaching:
+
+```R
+print_hi <- function(name){
+  cat("hi", name)
+}
+print_hi('Tom')
+#=> print 'hi Tom' to STDOUT.
+```
+
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

@@ -1,0 +1,9 @@
+---
+title: About
+---
+
+This is my GitHub homepage and blog. I also have [an older blog](https://abewrites.wordpress.com/) and a [homepage](https://abe.kazemzadeh.org).
+
+When I'm not dinking around with computers, I profess about them at [the University of St. Thomas Graduate Programs in Software](https://www.stthomas.edu/gradsoftware/).
+
+This site is built with [Quarto](https://quarto.org/).

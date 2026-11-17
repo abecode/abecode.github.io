@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/**
+    - favicon.ico
+  post-render: cp _site/index.xml _site/feed.xml
+
+website:
+  title: "Ebrahim (Abe) Kazemzadeh"
+  site-url: https://abecode.github.io
+  description: "Abe Kazemzadeh's homepage and blog."
+  favicon: favicon.ico
+  navbar:
+    left:
+      - href: index.qmd
+        text: Blog
+      - href: about/index.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/abecode
+      - icon: rss
+        href: feed.xml
+  page-footer:
+    center: "Ebrahim (Abe) Kazemzadeh"
+  body-footer: clustrmaps.html
+
+format:
+  html:
+    theme: cosmo

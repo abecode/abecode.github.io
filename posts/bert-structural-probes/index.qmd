@@ -1,0 +1,30 @@
+---
+title:  "BERT Structural Probes"
+date: 2020-12-05
+categories: [jekyll, update]
+aliases:
+  - /jekyll/update/2020/12/05/bert-structural-probes.html
+---
+
+
+
+
+c.f. [John Hewitt's Structural Probes Github repo](https://github.com/john-hewitt/structural-probes)
+
+
+
+use virrtualenv instead of conda
+```bash
+mkvirtualenv structuralprobe -p $(which python3.7)
+```
+
+use pip instead of conda
+```bash
+pip install -r requirements.txt
+```
+
+install pytorch
+```bash
+pip install torch torchvision torchaudio
+pip install pytorch-pretrained-bert
+```
