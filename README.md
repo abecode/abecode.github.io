@@ -16,8 +16,8 @@ To make a production build:
 quarto render
 ```
 
-The generated site is in `_site/`. Posts live in `posts/<slug>/index.qmd` and appear on the homepage automatically. Give each post a title, date, and categories in its YAML front matter. The `aliases` on migrated posts keep their original Jekyll URLs working.
+The generated site is in ignored `_site/`; do not commit it. Posts live in `posts/<slug>/index.qmd` and appear on the homepage automatically. Give each post a title, date, and categories in its YAML front matter. The `aliases` on migrated posts keep their original Jekyll URLs working.
 
 ## Publish
 
-The GitHub Actions workflow builds and deploys the site on pushes to `master`. In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. Then merge the Quarto branch into `master`. The workflow can also be run manually from the Actions tab.
+In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The workflow renders and deploys the site when the `quarto` branch is pushed. After merging into `main`, change the workflow's push trigger from `quarto` to `main`.
