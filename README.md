@@ -1,24 +1,23 @@
 # abecode.github.io
 
-[Ebrahim (Abe) Kazemzadeh's github homepage and blog](https://abecode.github.io "Ebrahim (Abe) Kazemzadeh's github homepage and blog")
+[Ebrahim (Abe) Kazemzadeh's homepage and blog](https://abecode.github.io/), built with [Quarto](https://quarto.org/).
 
+## Develop locally
 
-to serve locally using Jekyll
-```
-bundle exec jekyll serve
-```
+Install Quarto, then run:
 
-ugh, stupid Ruby, instead of wasting time installing on mac, use Docker/Rancher:
-
-```
-nerdctl pull jekyll/jekyll
-nerdctl run  -it -p8123:80 -v "$PWD:/srv/jekyll" jekyll/jekyll /bin/bash
-jekyll build
+```sh
+quarto preview
 ```
 
-finally, install by brew, use full paths:
-```
-/Users/kaze7539/homebrew/opt/ruby@3.1/bin/gem install jekyll bundler
+To make a production build:
+
+```sh
+quarto render
 ```
 
-reminder to self: don't use jekyll in the future!
+The generated site is in `_site/`. Posts live in `posts/<slug>/index.qmd` and appear on the homepage automatically. Give each post a title, date, and categories in its YAML front matter. The `aliases` on migrated posts keep their original Jekyll URLs working.
+
+## Publish
+
+The GitHub Actions workflow builds and deploys the site on pushes to `master`. In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. Then merge the Quarto branch into `master`. The workflow can also be run manually from the Actions tab.
