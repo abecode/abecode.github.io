@@ -1,0 +1,119 @@
+---
+title: "raid setup"
+date: "2012-11-07"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2012/11/07/raid-setup/index.html
+---
+
+I recently got a new computer for work, a 32 GB, 8 core, RAID enabled
+machine (woohoo!).  I wanted to test exactly how fast the RAID-0 setup
+actually was.  Transferring about 820 GB from a USB-3 external HD:
+
+time cp -rp /media/ts-backup-2/data_gnip/ /raid/\
+real    176m14.507s\
+user    0m23.533s\
+sys     44m27.038s
+
+or about 3 hours, 273GB per hour, 4GB per min., 75MB per sec.  I did the
+same\
+copy procedure to a regular hdd (7200RPM, bla, bla), and the result was
+pretty\
+much the same, which leads me to believe (hope) that the speed was
+limited by\
+the usb hdd.
+
+one thing that was taking a lot of time was simply doing wc on all the
+twitter\
+log files, so now I’m going to compare running wc on the raid and the
+regular\
+hdd:
+
+RAID\
+time wc /raid/data_gnip/tweets_2\*txt\
+348649707  21225017895 877863706316 total
+
+real    219m18.297s\
+user    213m20.851s\
+sys     5m25.995s
+
+which is about 3 hrs 40 minutes, or about 1.5 million lines (rather big
+json\
+records) per minute or 26000 lines per second.
+
+comparing that with the regular hdd:
+
+time wc /data/data_gnip/tweets_2\*txt\
+…\
+348649707  21225017895 877863706316 total
+
+real    223m9.239s\
+user    216m21.881s\
+sys     6m3.174s
+
+So I’m not really seeing the benefit of RAID at this point.  I’m still
+hoping\
+that I can find the benefit of RAID.  I was thinking that since it is a\
+sequential read, one file after another, that I might see the benefit
+with parallel reading:
+
+time find /raid -name “tweets_2\*txt” \| parallel wc\
+…\
+real    67m58.278s\
+user    425m54.987s\
+sys     7m9.929s
+
+So that was a lot faster (3x), and you can see the multiple\
+core effect in that the user CPU time is higher than the real time.
+
+time find /data -name “tweets_2\*txt” \| parallel wc\
+…\
+real    305m27.366s\
+user    265m43.306s\
+sys     6m49.296s
+
+aha, it finally found a way to see the speedup from RAID. itseems like
+the\
+cpu’s in the system monitor are less saturated, and more jagged/noisy.
+
+Still, in the process of waiting for these programs to terminate, I
+found an\
+approximate line counter on a forum.  It uses a partial line count from\
+portion of a big file and then extrapolates the approximate number based
+on\
+the file size.\
+<http://www.documentroot.com/2011/02/approximate-line-count-for-very-large.html>\
+Thanks to Erik Aronesty for providing this perl script!
+
+time alc.pl /raid/data_gnip/tweets_2\*txt
+
+…
+
+359757377 total\
+real    0m32.885s\
+user    0m0.496s\
+sys     0m0.800s
+
+which is off by about 10 million out of 350 millon, roughly a factor of
+less than 10, but faster by about an hour (roughly faster than a factor
+of 100).\
+To be complete, here’s the performance of alc.pl on the regular disk:
+
+time alc.pl /data/data_gnip/tweets_2\*txt
+
+359757377 total
+
+real    0m36.171s\
+user    0m0.639s\
+sys     0m0.684s
+
+VERDICT: Raid is definitely faster if you use it wisely, but if you just
+want an approximate line count, you can save a lot by just using a
+clever perl script. Of course I’ll be doing more than counting lines, so
+the raid should come in handy in the future, but it’s definitely
+possible to over engineer things if I’m not careful.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/11/07/raid-setup/).

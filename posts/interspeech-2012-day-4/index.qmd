@@ -1,0 +1,29 @@
+---
+title: "Interspeech 2012, Day 4"
+date: "2012-09-13"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2012/09/13/interspeech-2012-day-4/index.html
+---
+
+Today, the keynote speaker was Garet Lahvis, who presented on analyzing
+prosody in ultrasonic rat vocalizations.  I found this pretty
+interesting.  Even though the signal processing aspect of the study was
+very basic, the novel part is looking at animals instead of humans, and
+(non-human) lab rats that have been removed from their natural
+environment for several generations.  Also, an interesting aspect of
+this study is the implication for emotion research.  One of the
+interesting findings is that for a certain strain of rats, b6, positive
+valence emotion vocalization recordings had similar effects on other
+rats as food and morphine, and similar for negative valence events like
+foot shocks.  Another strain of rats, BALB, had less response to
+emotional vocalizations from other rats.  This study had implications
+for both substance abuse studies and autism research.
+
+One of the interesting posters I saw was on building speech recognition
+language models from twitter.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/09/13/interspeech-2012-day-4/).

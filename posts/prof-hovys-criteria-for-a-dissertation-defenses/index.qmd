@@ -1,0 +1,30 @@
+---
+title: "Prof. Hovy’s criteria for a dissertation defenses"
+date: "2011-09-21"
+author: Abe Kazemzadeh
+categories: ["dissertation", "research"]
+aliases:
+  - /2011/09/21/prof-hovys-criteria-for-a-dissertation-defenses/index.html
+---
+
+I recently attended a dissertation defense and Prof. Eduard Hovy was one
+of the committee members.  He mentioned a set of criteria that he uses
+to evaluate defenses.  Although I did not write them down quickly
+enough, he was kind enough to send them to me when I asked.   I’m
+posting them here so that help other students evaluate their own work
+before they present and defend it.
+
+Prof. Hovy’s 6 criteria:
+
+1\. Is this a real problem?\
+2. Is there a real idea/insight in the work? (creativity)\
+3. Has the solution been worked out sufficiently? (scope)\
+4. Does the student master the methodology of the field? (procedures and
+tools)\
+5. Are references to past work adequate? (depth and breadth of
+knowledge)\
+6. Can the student communicate the work? (writing and presentations)
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2011/09/21/prof-hovys-criteria-for-a-dissertation-defenses/).

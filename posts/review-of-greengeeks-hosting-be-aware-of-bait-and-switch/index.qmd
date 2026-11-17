@@ -1,0 +1,29 @@
+---
+title: "Review of GreenGeeks Hosting: be aware of bait-and-switch"
+date: "2012-02-26"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2012/02/26/review-of-greengeeks-hosting-be-aware-of-bait-and-switch/index.html
+---
+
+I’ve used [green geeks
+hosting](http://greengeeks.com "green geeks hosting") for several years
+and felt compelled to explain why I would not use them in the future.  I
+chose their service because it offered a terminal log in, which was very
+useful because I could make small modifications on the server by logging
+in rather than having to upload everything.  I also used svn, so I could
+just log in and do and svn up to get all my changes synced from my
+testing computer to their servers. However, overnight and without
+warning they disabled svn and were very unhelpful when I asked what was
+going on.  I think that it is a kind of bait and switch because they
+told me that to use svn I had to upgrade to a more expensive service.
+ Well, I had been using it quite happily on the cheaper service until
+they pulled the plug.  So if you are considering using greengeeks.com
+for your hosting and it seems like the features are good for you, please
+be aware that they may disable those features at some point and try to
+get you to pay more.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/02/26/review-of-greengeeks-hosting-be-aware-of-bait-and-switch/).

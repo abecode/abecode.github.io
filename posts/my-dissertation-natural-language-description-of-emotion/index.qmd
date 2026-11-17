@@ -1,0 +1,210 @@
+---
+title: "My Dissertation, Natural Language Description of Emotion: General Theoretical Issues"
+date: "2012-08-13"
+author: Abe Kazemzadeh
+categories: ["dissertation", "emotions", "language", "research", "Uncategorized"]
+aliases:
+  - /2012/08/13/my-dissertation-natural-language-description-of-emotion/index.html
+---
+
+Dissertations, especially in computer science, can be very technical and
+hard to explain to people who are not other computer scientists.
+ However, I’m trying to explain my dissertation topic for people who do
+not have any special training, and I thought a blog would be a good
+place to do this because blogs are very informal.  I’m not sure how many
+people will actually read this, but if it’s not entirely clear to you,
+please write me a comment and let me know how I can improve it.  Also,
+if you are technically inclined, feel free to comment as well.
+
+The field of my dissertation is in natural language processing, which is
+a subfield of computer science that aims to make computer programs that
+can “process” human language. By “process” I mean that the computer
+should be able to understand human language in some limited,
+computational sense.  Some examples of natural language processing are:
+
+- machine translation, e.g. <http://translate.google.com>
+- speech recognition, e.g., Siri, on the latest greatest shiny ipad
+- question answering, Siri would also be a good example of this
+- dialog systems, Siri is another example, as are automated call centers
+- text summarization, e.g. making an excerpt of a web page for display
+  in search results
+- dialog systems, e.g., chatbots, Siri, intelligent agents
+- part of speech tagging, i.e., labeling words as nouns, verbs,
+  prepositions, etc, which is used in many of the examples above.
+- parsing, i.e. determining the syntactic structure of sentences, which
+  is used in a lot of the above examples
+- Natural language understanding or semantic analysis, which aims to
+  determining the meaning of sentences
+- affective computing and sentiment analysis, determining the emotional
+  content of language
+- text classification, which is classifying text into different
+  categories, such as spam/not spam, world news/national news/sports
+  news, etc., angry/happy/sad/neutral, author X/author Y/authorZ/…,
+- topic modeling, trying to determine the topic of a document, which is
+  like text classification but not knowing the set of topics beforehand
+- …
+
+Hopefully these examples provide an overview of natural language
+processing, which is also known as NLP for short.  My dissertation topic
+fits in a couple of these categories.  First of all, it is about
+emotions, so it is in the affective computing subfield of NLP.  It is
+also about the meaning of language about emotions, so it is also in the
+natural language understanding or semantic analysis fields.  It also
+deals with a dialog agent that asks questions, so it can be seen as
+tangentially in the dialog system subfield.
+
+Now that I’ve explained a bit about the general area of my dissertation
+topic, let me say some more about how it is different and new.  In
+affective computing and sentiment analysis, most previous work has
+focused on determining the writer’s emotion or the emotion that the
+writing will provoke in the reader.  I call this “expression of
+emotions” in language.  My work focuses on description of emotions,
+which are slightly different.  Description of emotion is when people
+talk (or write) about emotions.  The reason why this is interesting and
+important is that I can talk about sadness, despair, resentment,
+jealousy, rage, vindication, pride, ecstasy, relief, and cheerfulness
+without being or feeling any of these.  The previous sentence would have
+seriously thrown off any algorithm that is trying to determine my
+emotional state, or the emotion that is inspired in you, the reader.  So
+I picked this area, with the help of my professors and labmates, which
+we call *Natural Language Description of Emotion*, as a topic to study.
+ Another reason why this area is interesting and important is that
+animals are able to express their emotions, but humans are the only
+species I know of that can describe and name emotions (that may or may
+not be their own current emotions).  This is an important ability of
+humans because it allows a great deal of introspection and allows us to
+think about emotions hypothetically. On the downside, we humans aren’t
+only feeling emotions “in the moment” like animals do, but imagining
+about, gossiping about, and projecting emotions, and more.  Sometimes I
+feel like writing a self-help book when I finish my dissertation!
+
+So now having a topic,  that is somewhat interesting and important and
+different from previous work, I needed a thesis statement.  Now that I
+have given (hopefully) a gentle introduction, I need to unleash the
+technical jargon.  It is not as complicated as it sounds, but I’m going
+to write it now to inoculate the reader:
+
+> Natural Language Descriptions of Emotion are Definite Descriptions
+> that refer to Intersubjective Theoretical Entities.
+
+See, that wasn’t that bad was it?  It sounds very technical but I can
+explain it fairly easily if you, can patiently bear with me.  I’ve
+already explained what natural language descriptions of emotion are.
+ The next thing to explain is definite descriptions.  The notion of
+definite descriptions was discovered by Bertrand Russell, a philosopher,
+logician, and mathematician, among other things.  Definite descriptions
+capture how people can talk about a specific, unique object.  If I see a
+rabbit and point to it and say “rabbit”, you know that the meaning of
+“rabbit” is the object that I’m pointing at.  However, we can talk about
+objects that are not physically present and even though they are not
+physically present, we can talk about them as if they were a unique
+object.  The form of a description that refers to a unique object or
+entity is what is known as a definite description.  An expression in the
+form of “the” + noun, that is a noun preceded by the word “the”,  is a
+definite description.  Proper names like “Abe Kazemzadeh” or “Bertrand
+Russell” are also examples.
+
+So why are we talking about “definite descriptions” again? First, I’m
+claiming in the thesis statement that when we talk about and describe
+emotions we are actually referring to something that is specifically and
+uniquely describible.  We can claim that “happiness” is distinct from
+“elation” based on how we describe them.  Also, we can claim that the
+happiness I feel is the same as the happiness that you, the reader,
+feels, even though we have a different personal histories and perhaps
+some differences in our brain chemistry.  So this is the idea that I’m
+trying to capture when I say that natural language descriptions of
+emotion are definite descriptions.
+
+The other reason why I introduce the idea of definite descriptions into
+my dissertation is more technical, so I won’t go over that in too much
+detail, but apart from the details it’s not that hard to understand.
+ From a technical point of view, if we want to reduce statements in
+human language to logic, we need to consider words as logical variables,
+and in logic variables must refer to objects or sets of objects.
+ However, in natural language we have words that refer to descriptions
+rather than objects.  The technical aspect of definite descriptions
+allows variables to stand for descriptions rather than objects or sets
+of objects.  The whole business of reducing language to logic is
+important because computers are essentially logic machines and to get
+them to understand anything, you need to reduce it to logic.
+
+This is a good point to introduce the last part of the thesis statement
+“intersubjective theoretical objects”.  The idea of theoretical objects
+was discovered by Rudolf Carnap, a philosopher of science.  He was
+involved with trying to describe things logically, unambiguously, and in
+a way that was empirically verifiable.  The way he proposed doing this,
+was to only talk about things that are physically observable.  If you
+try to do this, you’ll realize that is is very impractical, but it was a
+provocative idea.  If you can only talk about physical objects, then
+everything you say can be scientifically tested.  However, even
+scientists talk about imaginary, unobservable things: for example, the
+idea of an atom was essentially a such a fairy tale for more than two
+thousand years, from the time that Democritus, the ancient Greek,
+proposed it, to the time that it was physically studied in laboratories
+in the late 1800’s and early 1900’s.  So actually, these unobservable
+objects (at least before a certain point that they become observable),
+are actually pretty important to science because they are like the
+cutting-edge hypotheses that need to be tested.  These type of objects
+that are not observable were called “theoretical objects (or entities)”
+by Carnap.
+
+In saying that natural language descriptions of emotion are definite
+descriptions that refer to theoretical objects, what I mean is that we
+may not (currently) be able to observe and test our language about
+emotions, but at a certain point, we may be able to (for example if
+there is some kind of brain physiology that gets discovered).
+ Currently, we don’t know if happiness, anger, sadness, etc. are unique
+physiological states, but we are able to talk about them as if they
+were.
+
+I actually think that some emotion descriptions will never be reduced to
+an observable (e.g. physiological) basis, and that’s why I say that
+natural language descriptions refer to *intersubjective* theoretical
+entities. What I mean by this is that the experience of an emotion may
+be subjective to a given person, but that the meaning of the words
+describing the emotion are understood across subjects, i.e.
+intersubjectively.  Furthermore, even if we could observe the subject’s
+internal state, it wouldn’t matter for some emotion descriptions because
+the meaning of the descriptions are determined by the conventional
+meaning of language (i.e., being brought up in a linguistic community),
+and  not determined by  some internal state.
+
+To better illustrate intersubjectivity, compare the words “red”,
+“rabbit”, and “bachelor” (I took these examples from a book called Word
+And Object by Willard Van Orman Quine) .  “Red” refers directly to
+sensory experience, so it is subjective, but we understand about how
+eyes work so we know that there is some biological similarities in how
+we experience “red”.  Also, the “edges” of the meaning of “red” are
+gradual: if you slowly vary the shade/hue, you might slowly make
+something into not red, but it will be gradual, not abrupt.  “Rabbit”
+refers to a physical object, so it’s core meaning is not subjective,
+although people might have different subjective associations about
+rabbits, e.g., if they have had a pet.  “Bachelor” is unobservable and
+subjective from a sensory point of view.  For a given person, they will
+be able to determine who is a bachelor given their social relations.
+ However, for a random person outside of their social relations, they
+will not be able to say whether they are bachelors or not (for a female,
+they will be able to say for sure that she is not, but for a random
+male, they can only estimate, say given age, what is the likelihood of
+being a bachelor).  However, if not restricted to sensory data, a person
+can simply ask if an unknown male human is married or not.  The core
+meaning of the word “bachelor” is not established by observation but
+rather by language. This language-established-agreement-in-meaning is
+what intersubjectivity is.   In saying that descriptions of emotion are
+intersubjective, what I’m saying is that what we describe as an emotion
+is as much determined by our language as it is by our physical
+observations.  So of the three words, “red”, “rabbit”, and “bachelor”,
+natural language descriptions of emotion are most similar to “bachelor”
+in terms of the type of subjectivity they contain.
+
+So now you should understand the thesis statement, the main claim of my
+dissertation.  This part is the theoretical part.  There are two more
+broad parts: the computational part, and the experimental part.  The
+computational part involves making a model that specifies the details of
+the thesis statement into a computer program.  The experimental part
+involves testing the program in the wild, as it interacts with people.
+ I’ll write about these other aspects of my dissertation shortly…
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/08/13/my-dissertation-natural-language-description-of-emotion/).

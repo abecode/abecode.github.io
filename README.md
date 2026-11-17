@@ -20,4 +20,8 @@ The generated site is in ignored `_site/`; do not commit it. Posts live in `post
 
 ## Publish
 
-In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The workflow renders and deploys the site when the `quarto` branch is pushed. After merging into `main`, change the workflow's push trigger from `quarto` to `main`.
+In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The workflow renders and deploys the site when the `main` branch is pushed.
+
+## WordPress archive
+
+The 24 posts imported from [abewrites](https://abewrites.wordpress.com/) retain their original publication dates. Images and PDFs are stored locally in `assets/wordpress/`. See [_migration/README.md](_migration/README.md) and the accompanying manifest for source URLs and import details.

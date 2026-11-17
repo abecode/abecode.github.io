@@ -1,0 +1,36 @@
+---
+title: "Spectrograms and Sentiment Analysis"
+date: "2012-08-13"
+author: Abe Kazemzadeh
+categories: ["emotions", "linguistics", "Uncategorized"]
+aliases:
+  - /2012/08/13/spectrograms-and-sentiment-analysis/index.html
+---
+
+Spectrograms are one of the most commonly used ways to analyze speech
+signals.  However, they are generally not used as evidence in trials for
+forensic purposes.  They may be used by an expert witness, such as a
+linguist/phonetician, but this person bears witness as an expert and
+spectrograms are not presented as evidence.  The reason why they do not
+use spectrograms as evidence is that they are somewhat technical and can
+be used to convince jurors, one way or another, who might not understand
+the technical details. (As an aside, technical details may also convince
+a defendant or plaintiff: My forensic linguistics professor, Prof.
+Disner, was an expert witness for the famous lawyer Johnie Cochran and
+he asked her to bring all her technical recording and analysis equipment
+to the trial, which the the opposing party saw and became intimidated
+and they promptly confessed/settled).  The word “spectrogram” came to be
+a bad word in court cases because they were overused (misused) in this
+way, probably law enforcement over using it to get convictions in cases
+where recordings were used as evidence.
+
+I think that sentiment analysis could be a similar phenomenon, if it is
+overused or used naively.  It might be possible to overuse sentiment
+analysis and lead people to dismiss it in a similar way.  I think that
+one thing that would be good to remedy this possible risk is to release
+benchmark data sets so that different algorithms can be rigorously
+tested.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/08/13/spectrograms-and-sentiment-analysis/).

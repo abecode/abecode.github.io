@@ -1,0 +1,43 @@
+---
+title: "Natural language processing with Naive Bayes using NLTK"
+date: "2012-08-09"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2012/08/09/natural-language-processing-with-naive-bayes-using-nltk/index.html
+---
+
+Last night I gave a presentation at [Carbon
+5](http://www.carbonfive.com/ "Carbon 5") hack night
+[meetup](http://www.meetup.com/Hack-Night-at-Carbon-Five-LA/). The
+intention was to give an intro to natural language processing (NLP) and
+Naive Bayes.  There’s a lot of different types NLP, but I thought that
+the best way to introduce it in one night was to focus on Naive Bayes
+classification and sequential probability estimation.  The examples I
+used were classifying tweets into positive/negative/neutral/unsure
+categories, and sequentially estimating the probability of emotions in
+[EMO20Q](http://sail.usc.edu/emo20q "Emotion Twenty Questions"), which
+I’ve been working on at hack night.
+
+It was fun presenting about programming because in academic talks it
+usually stops at the equations, while last night I got to go into the
+details of how it is implemented in
+[NLTK](http://code.google.com/p/nltk/), which I find very clever.  It
+went well but I still had some constructive feedback.  By the end of the
+talk I realized that I was using too many variations on the names of the
+terms of Naive Bayes, like p(model\|data),  p(label\|feature), or
+p(category\|word).  On one hand, I thought it would be good to inoculate
+the audience to the different jargon, but I realized that it would have
+been better to stick to one convention and save that jargon inoculation
+to the end.
+
+Thanks again to Carbon Five for hosting. I wish all presentations could
+be accompanied by beer and pizza!
+
+Here is the handout version of the slides:
+
+[presentationForCarbon5_naiveBayes_handout](/assets/wordpress/2012/08/presentationforcarbon5_naivebayes_handout.pdf)
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/08/09/natural-language-processing-with-naive-bayes-using-nltk/).

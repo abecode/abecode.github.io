@@ -1,0 +1,27 @@
+---
+title: "My New Job at Vixlet"
+date: "2015-01-06"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2015/01/06/my-new-job-at-vixlet/index.html
+---
+
+My old job analyzing social media (mainly Twitter) at
+[Adly](http://adly.com) disappeared after it was acquired and I started
+working at [Vixlet](http://vixlet.com).  Vixlet’s aim is to connect
+people with what they are passionate about, which to date has been
+mainly music (Slipknot) and sports (baseball, football, and tennis).  My
+role there is to do R&D and analytics.  It’s been a productive 2.5
+months so far and I’ve had a lot of fun (i got to go to London to the
+Barclay’s ATP tennis tournament for work!).  We started a site,
+[labs.vixlet.com](http://labs.vixlet.com "labs.vixlet.com") to show
+demos from our work. One demo is the “[Passion Bot”, a dialog agent to
+talk about a user’s passions](http://labs.vixlet.com:5000).  Another was
+[a visualization of Twitter traffic about tennis during the Barclay’s
+ATP tournament](http://labs.vixlet.com:5001).  Another demo was a
+[chatbot for tennis trivia](http://labs.vixlet.com:5002).
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2015/01/06/my-new-job-at-vixlet/).

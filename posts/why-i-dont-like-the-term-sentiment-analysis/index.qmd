@@ -1,0 +1,36 @@
+---
+title: "Why I don’t like the term “sentiment analysis”"
+date: "2011-06-14"
+author: Abe Kazemzadeh
+categories: ["emotions", "language", "research", "sentiment", "sentiment analysis"]
+aliases:
+  - /2011/06/14/why-i-dont-like-the-term-sentiment-analysis/index.html
+---
+
+Sentiment analysis has become a hot topic in the fields of natural
+language processing and affective computing.  Sentiment analysis aims to
+obtain a user’s attitude or feeling   about some topic using digital
+information, like product reviews, ratings,  language, emotions, and
+social networks.
+
+While I like a lot of the research and the promises that sentiment
+analysis offers, I think the name is an unfortunate example of how the
+pressures of academics and marketing cause people to give new names to
+old ideas, in the process obscuring their intellectual roots.  Instead 
+“sentiment”, I believe it should be called “utility” to connect it with
+earlier ideas in economics and AI.  According to wikipedia
+(<http://en.wikipedia.org/wiki/Sentiment_analysis>) the “early work” in
+sentiment analysis goes back to 2002.  However, the idea of utility goes
+back to the late 1700’s and 1800’s under the pioneering work of the
+Bernoulli brothers,  Jeremy Bentham and John Stuart Mill, and has been
+treated by major researchers such as Pareto, Edgeworth, and von Neuman.
+
+To me, it seems that sentiment analysis, especially for product reviews,
+is measuring classical utility.  The novelty is that it uses digital
+information that is often unstructured, like raw text.  So if we could
+start fresh with a name that I feel is appropriate, I would call it
+“text-based utility measurement”.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2011/06/14/why-i-dont-like-the-term-sentiment-analysis/).

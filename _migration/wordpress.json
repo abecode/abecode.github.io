@@ -1,0 +1,559 @@
+{
+  "source": "https://abewrites.wordpress.com/",
+  "posts": [
+    {
+      "id": 9,
+      "title": "Emotion 20 Questions and the Mild Anguish of Presque-Vu",
+      "published": "2011-05-03T02:49:41+00:00",
+      "source": "https://abewrites.wordpress.com/2011/05/03/emotion-twenty-questions-and-the-mild-anguish-of-presque-vu/",
+      "file": "posts/emotion-twenty-questions-and-the-mild-anguish-of-presque-vu/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "7e5ac7e8738ad7b1345935ff52e4bdcd471bfb668e742ad9be404d53fb2929bc"
+    },
+    {
+      "id": 20,
+      "title": "Remembering Prof. Jean-Roger Vergnaud",
+      "published": "2011-05-11T03:07:24+00:00",
+      "source": "https://abewrites.wordpress.com/2011/05/11/remembering-prof-jean-roger-vergnaud/",
+      "file": "posts/remembering-prof-jean-roger-vergnaud/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "98d4be798696b36ccfab0ab75f1d7223cb7c1f268d421009ba0b353cd0e8035c"
+    },
+    {
+      "id": 30,
+      "title": "Why I don’t like the term “sentiment analysis”",
+      "published": "2011-06-14T03:19:47+00:00",
+      "source": "https://abewrites.wordpress.com/2011/06/14/why-i-dont-like-the-term-sentiment-analysis/",
+      "file": "posts/why-i-dont-like-the-term-sentiment-analysis/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "c9831f6e33cb21dad891b6eafededf0cdaddade762f1c8fb3b570857d8355f37"
+    },
+    {
+      "id": 41,
+      "title": "Prof. Hovy’s criteria for a dissertation defenses",
+      "published": "2011-09-21T07:46:00+00:00",
+      "source": "https://abewrites.wordpress.com/2011/09/21/prof-hovys-criteria-for-a-dissertation-defenses/",
+      "file": "posts/prof-hovys-criteria-for-a-dissertation-defenses/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "4922a58272fe9e7b6a67349f3347786c6a12f92e5d323594690f3cead19dde45"
+    },
+    {
+      "id": 51,
+      "title": "Emotion Words, Sign Language, and the Mirror Neuron Hypothesis",
+      "published": "2012-01-30T03:23:58+00:00",
+      "source": "https://abewrites.wordpress.com/2012/01/30/emotion-words-sign-language-and-the-mirror-neuron-hypothesis/",
+      "file": "posts/emotion-words-sign-language-and-the-mirror-neuron-hypothesis/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "86b6911df9eebf1bd0658dec08a227d97449d83f6c867487dd4aa44baab3eb0e"
+    },
+    {
+      "id": 94,
+      "title": "Review of GreenGeeks Hosting: be aware of bait-and-switch",
+      "published": "2012-02-26T07:09:47+00:00",
+      "source": "https://abewrites.wordpress.com/2012/02/26/review-of-greengeeks-hosting-be-aware-of-bait-and-switch/",
+      "file": "posts/review-of-greengeeks-hosting-be-aware-of-bait-and-switch/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "d6fdccaedf0e9ec6751a4dbf54d1c50b54251ca228a86e27cf9b9395962b1020"
+    },
+    {
+      "id": 99,
+      "title": "Natural language processing with Naive Bayes using NLTK",
+      "published": "2012-08-09T23:01:31+00:00",
+      "source": "https://abewrites.wordpress.com/2012/08/09/natural-language-processing-with-naive-bayes-using-nltk/",
+      "file": "posts/natural-language-processing-with-naive-bayes-using-nltk/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "89f6be53ef6dcfebe343ab6b25e6b7c21061fa9fddd8d380ab6f616a8f215272"
+    },
+    {
+      "id": 106,
+      "title": "Spectrograms and Sentiment Analysis",
+      "published": "2012-08-13T15:43:18+00:00",
+      "source": "https://abewrites.wordpress.com/2012/08/13/spectrograms-and-sentiment-analysis/",
+      "file": "posts/spectrograms-and-sentiment-analysis/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "66f5f0687f7455af34707c088081d92a9c5de8b27aa0d0afae16648feb6d6db9"
+    },
+    {
+      "id": 125,
+      "title": "My Dissertation, Natural Language Description of Emotion: General Theoretical Issues",
+      "published": "2012-08-13T17:41:43+00:00",
+      "source": "https://abewrites.wordpress.com/2012/08/13/my-dissertation-natural-language-description-of-emotion/",
+      "file": "posts/my-dissertation-natural-language-description-of-emotion/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "750a09cce37401d88b27428b4c79ebf0eed1221bac9f21f9bcd04eb536cbe7d3"
+    },
+    {
+      "id": 204,
+      "title": "Interspeech 2012, day 0: tutorial on domain adaptation for machine learning",
+      "published": "2012-09-09T18:47:45+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/09/interspeech-2012-day-0-tutorial-on-domain-adaptation-for-machine-learning/",
+      "file": "posts/interspeech-2012-day-0-tutorial-on-domain-adaptation-for-machine-learning/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "7ded3eef59eb8c35c0ee0263489ba83a742496db393d037bd23e22e1d5331e6b"
+    },
+    {
+      "id": 206,
+      "title": "Interspeech 2012, day 0: tutorial on topic models for acoustic data",
+      "published": "2012-09-09T19:03:29+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/09/interspeech-2012-day-0-tutorial-on-topic-models-for-acoustic-data/",
+      "file": "posts/interspeech-2012-day-0-tutorial-on-topic-models-for-acoustic-data/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "021efae502cc8d431efa9f3aa534f2c139a508a61c6149c6c0bd180f18b75771"
+    },
+    {
+      "id": 218,
+      "title": "Interspeech 2012, day 1",
+      "published": "2012-09-10T19:50:24+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/10/interspeech-2012-day-1/",
+      "file": "posts/interspeech-2012-day-1/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "e1342a17fc35152d23401d827edb74b08c4a82c16e047fadb2b7959d408639eb"
+    },
+    {
+      "id": 222,
+      "title": "Interspeech 2012, day 2",
+      "published": "2012-09-11T19:07:40+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/11/interspeech-2012-day-2/",
+      "file": "posts/interspeech-2012-day-2/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "9a09a8d78c81af8e2320d026cb759b91aa49e2b12cc55b6660bd06c37ca40a41"
+    },
+    {
+      "id": 225,
+      "title": "Interspeech 2012, day 3",
+      "published": "2012-09-12T19:08:20+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/12/interspeech-2012-day-3/",
+      "file": "posts/interspeech-2012-day-3/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "0b334fec9ea3435fd8bd550055b3d92fbf8c270c7bf72d6e172242225767ccd9"
+    },
+    {
+      "id": 216,
+      "title": "Interspeech 2012, Day 4",
+      "published": "2012-09-13T19:05:58+00:00",
+      "source": "https://abewrites.wordpress.com/2012/09/13/interspeech-2012-day-4/",
+      "file": "posts/interspeech-2012-day-4/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "628e170c3e673703aadc01b877b32f93bff8300ac6a2fcee5f7243d4ebc65be1"
+    },
+    {
+      "id": 261,
+      "title": "raid setup",
+      "published": "2012-11-07T04:02:12+00:00",
+      "source": "https://abewrites.wordpress.com/2012/11/07/raid-setup/",
+      "file": "posts/raid-setup/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "dc615e4ef15290e128c323dd77ac71243ed0c12b6dd810f1c84d5b43b0fcb089"
+    },
+    {
+      "id": 266,
+      "title": "2012 US Presidential Election Timeline in Twitter",
+      "published": "2012-12-14T23:08:12+00:00",
+      "source": "https://abewrites.wordpress.com/2012/12/14/2012-us-presidential-election-timeline-in-twitter/",
+      "file": "posts/2012-us-presidential-election-timeline-in-twitter/index.qmd",
+      "gist_blocks": 1,
+      "source_html_sha256": "7ed9895d4ccc7b2cc467b355aad1b4a68bb9ea20cf9532de4ba321bb6bb46008"
+    },
+    {
+      "id": 313,
+      "title": "Hourly Counts of Movie Tweets Using R",
+      "published": "2013-01-18T06:41:39+00:00",
+      "source": "https://abewrites.wordpress.com/2013/01/18/hourly-counts-of-movie-tweets-using-r/",
+      "file": "posts/hourly-counts-of-movie-tweets-using-r/index.qmd",
+      "gist_blocks": 1,
+      "source_html_sha256": "1422d41b133a260511e91f88b40bc09ed7c6487bd6e99f7902cdd43fc9b45f40"
+    },
+    {
+      "id": 331,
+      "title": "Analysis of Social Media for NBA Finals",
+      "published": "2013-06-12T20:31:49+00:00",
+      "source": "https://abewrites.wordpress.com/2013/06/12/analysis-of-social-media-for-nba-finals/",
+      "file": "posts/analysis-of-social-media-for-nba-finals/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "7ae7265707ab24c658074cf00dc6ded0bd8f69a437c1d230ee5ff3e9c5d06209"
+    },
+    {
+      "id": 336,
+      "title": "Vacation Metrics",
+      "published": "2013-09-11T21:32:37+00:00",
+      "source": "https://abewrites.wordpress.com/2013/09/11/vacation-metrics/",
+      "file": "posts/vacation-metrics/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "92b4d98b63f87d0d4663f274f698e828169bf5767d086364ce5eaeb03d7c0bb6"
+    },
+    {
+      "id": 340,
+      "title": "Chinese allegory of the cave",
+      "published": "2014-06-14T08:42:26+00:00",
+      "source": "https://abewrites.wordpress.com/2014/06/14/chinese-allegory-of-the-cave/",
+      "file": "posts/chinese-allegory-of-the-cave/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "a047aae4c4a4f417843ad437e64ad1a427f2227ada2dd86c5be30f3ab42e9125"
+    },
+    {
+      "id": 345,
+      "title": "My New Job at Vixlet",
+      "published": "2015-01-06T08:02:04+00:00",
+      "source": "https://abewrites.wordpress.com/2015/01/06/my-new-job-at-vixlet/",
+      "file": "posts/my-new-job-at-vixlet/index.qmd",
+      "gist_blocks": 0,
+      "source_html_sha256": "74396cc3e1c7bd94770b125063afe22ce3a8a379a501980b7d6d604032c881dc"
+    },
+    {
+      "id": 349,
+      "title": "Fun with FFT at Vixlet",
+      "published": "2015-03-05T18:24:49+00:00",
+      "source": "https://abewrites.wordpress.com/2015/03/05/fun-with-fft-at-vixlet/",
+      "file": "posts/fun-with-fft-at-vixlet/index.qmd",
+      "gist_blocks": 1,
+      "source_html_sha256": "52fc9d7a0f47cfa0695eeb8613f5804dbc67e2c9416cc6023a58780e95ddf78b"
+    },
+    {
+      "id": 358,
+      "title": "Deep Dreaming at Vixlet",
+      "published": "2015-07-09T18:17:09+00:00",
+      "source": "https://abewrites.wordpress.com/2015/07/09/deep-dreaming-at-vixlet/",
+      "file": "posts/deep-dreaming-at-vixlet/index.qmd",
+      "gist_blocks": 1,
+      "source_html_sha256": "2ca8909009017ea0ec63e055e84025704603969c7e69edce78af629f277b0932"
+    }
+  ],
+  "media": [
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/08/presentationforcarbon5_naivebayes_handout.pdf",
+      "file": "assets/wordpress/2012/08/presentationforcarbon5_naivebayes_handout.pdf",
+      "bytes": 1001563,
+      "sha256": "01b44dde83b8c1b0f0bb7f25c5054ff305bdec137dcf4ab35a58f2d24595772a"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/20120910-122200.jpg",
+      "file": "assets/wordpress/2012/09/20120910-122200.jpg",
+      "bytes": 14834,
+      "sha256": "5f4fd9977a52f4682d9d15dde99319faf97de4b3d5a9009ce5981fdbfb256a15"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/20120910-122211.jpg",
+      "file": "assets/wordpress/2012/09/20120910-122211.jpg",
+      "bytes": 20638,
+      "sha256": "e789d58633ef22ce5f3070d93c2a45606a5117085e47cf8e8bad1371dbc5c359"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/emo20qposterforinterspeech2012.pdf",
+      "file": "assets/wordpress/2012/09/emo20qposterforinterspeech2012.pdf",
+      "bytes": 607453,
+      "sha256": "889673f818e352c60b2ef768d9bd3fa5c05240e63740ffdea81636a6655e96dc"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-11-13-22-26.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-11-13-22-26.jpg",
+      "bytes": 98976,
+      "sha256": "c08faa4938b07266303eb75fadc6987d56398fba7ff4b279400418aa4b211023"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-11-13-22-50.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-11-13-22-50.jpg",
+      "bytes": 98176,
+      "sha256": "a0b076819dfad3b389fb9e6ce6f956c13287d2d47b8385a4f55ce5c96c908855"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-12-19-27-36.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-12-19-27-36.jpg",
+      "bytes": 99919,
+      "sha256": "a7acdfff57a9ddffccfdb84c50961f09103baf15069d62c5962861a78517d9a1"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-12-20-22-40.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-12-20-22-40.jpg",
+      "bytes": 89959,
+      "sha256": "164f3b61cbf3973281f32f5777659595c82b9840a4ab4f899d973092dbe04bca"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-13-01-17-43.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-13-01-17-43.jpg",
+      "bytes": 96910,
+      "sha256": "10627212ac7414c9d531b3f7a9e21d82320ec16e1b148dd28807c5ac6b41ef3d"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/09/2012-09-13-01-18-19.jpg",
+      "file": "assets/wordpress/2012/09/2012-09-13-01-18-19.jpg",
+      "bytes": 96576,
+      "sha256": "f96197506349f8bf448262e8627bb85cf67ab8e1a35bcf99a9d2528890dd6078"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2012/12/electiontimeline_annotated.png",
+      "file": "assets/wordpress/2012/12/electiontimeline_annotated.png",
+      "bytes": 25592,
+      "sha256": "df705d5ed3642d63fc145aa6a155acfc2583e162b791bf6933520a8c9173726b"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2013/01/moviesfrom20130111.png",
+      "file": "assets/wordpress/2013/01/moviesfrom20130111.png",
+      "bytes": 14463,
+      "sha256": "e398a298c6a8c1ec5388326295301602e79f34dd1115f15b0866fe9c1c441751"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2013/06/2013nbafinalsgame3.jpeg",
+      "file": "assets/wordpress/2013/06/2013nbafinalsgame3.jpeg",
+      "bytes": 177585,
+      "sha256": "263c1086bd570f221636e9b01fa4362b07d17bb0ece6064152295cb14b5579ae"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2014/06/mike_kelley_spelunking.jpg",
+      "file": "assets/wordpress/2014/06/mike_kelley_spelunking.jpg",
+      "bytes": 96174,
+      "sha256": "3d53fca48dddc76a6d26ed46b31161f765320a005a2e699e3cc67cea879b2bbf"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_raw.jpg",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_raw.jpg",
+      "bytes": 81176,
+      "sha256": "258ba0e774dd792be671aeb2bdc211e7b30feeab0c067b3bad73984cd2a1abfd"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_remavgspectrum.jpg",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_remavgspectrum.jpg",
+      "bytes": 74654,
+      "sha256": "27cf89b9c26b068f1517144fceceb682bfcdff1db9077be3766d1c5e16fd94e6"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_onlysmoothing.jpg",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_onlysmoothing.jpg",
+      "bytes": 71205,
+      "sha256": "80e9f0bc0fed2c8f8ab2707fa5866777300b8a61d472e72629a3571d37b6c2db"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_raw.pdf",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_raw.pdf",
+      "bytes": 6950,
+      "sha256": "7dee089102ff6891a287844b0884d8a50a2a5c4547c2405f61be898ba0f84a08"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_remavgspectrum.pdf",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_remavgspectrum.pdf",
+      "bytes": 6762,
+      "sha256": "2ef24f09aff9935662e53598a59255fe88c90b102cef17d3960fe8a90d1eada0"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/03/hourly_app_status_snip_onlysmoothing.pdf",
+      "file": "assets/wordpress/2015/03/hourly_app_status_snip_onlysmoothing.pdf",
+      "bytes": 6545,
+      "sha256": "78a7372abeb719c6bdd9f865b3caa6ebc8ebc2beda5101ea47e2fa0092572962"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e.jpg",
+      "file": "assets/wordpress/2015/07/steve-e.jpg",
+      "bytes": 418350,
+      "sha256": "db7894d3af1972bb323b05841a02663081f50584ddaf5b0f0e32665169391a68"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_5a.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_5a.jpg",
+      "bytes": 807283,
+      "sha256": "00fdb81c50cc694bb1697afcbdcf0a8abb3969ce35c36a5ae9063b96ee283f6f"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/googlenet.jpg",
+      "file": "assets/wordpress/2015/07/googlenet.jpg",
+      "bytes": 6476358,
+      "sha256": "56d581d0f2672f27dbe82161bc3cfe9774352efba64766ff8fd0227fb55e9d6d"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-conv1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-conv1.jpg",
+      "bytes": 764491,
+      "sha256": "c7e8ad0dc63b8e3f67876ee2a1d58566ea4d0ddbbb9b6fa96278f26676230bc2"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-pool1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-pool1.jpg",
+      "bytes": 904256,
+      "sha256": "c4b8e956191862e24effbcc58650fca51caeafab47da83d962af4eb72db52d83"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-pool1norm1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-pool1norm1.jpg",
+      "bytes": 1090653,
+      "sha256": "7f23ab2feefc69a18fbe5aff98d03593706536decd9e74d4dc79319d1d2bdc5d"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-conv2_3x3_reduce.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-conv2_3x3_reduce.jpg",
+      "bytes": 846917,
+      "sha256": "03c81fb1631264e064c20ed0310d001c987c09c79bb2a30117d7f5665072c7df"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-conv2_3x3.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-conv2_3x3.jpg",
+      "bytes": 703611,
+      "sha256": "8ec3a94929da8caf59e84fedfe645ea81819b65ef02bb137df4361afe969f01e"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-conv2_norm2.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-conv2_norm2.jpg",
+      "bytes": 857077,
+      "sha256": "aef5599b1735d1500d7f3727523374e98df0953ff203c91feb2f1d6b7a801196"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-pool2_3x3_s2.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-pool2_3x3_s2.jpg",
+      "bytes": 911229,
+      "sha256": "8e8d115c2ce1d260bc3b6229327ee79cec3930628dbcb90b2b4a29a5a624ce26"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_pool.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_pool.jpg",
+      "bytes": 896852,
+      "sha256": "5eacc56f403f88e34dc5f3765e89b6a9faed91892448df6aa527c2f934631185"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_5x5_reduce.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5_reduce.jpg",
+      "bytes": 859128,
+      "sha256": "1f2c5f59cd4c7cc9cad1af9a590a945acfa61fc8b50d263ee992cf5bcb01763c"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_1x1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_1x1.jpg",
+      "bytes": 897610,
+      "sha256": "2c1ee5a8ca0f3005bc7bebb3fbf57de47ff3cd75f91cbfc757e48545406b1e23"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_3x3_reduce.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3_reduce.jpg",
+      "bytes": 845821,
+      "sha256": "5b596cae0aa6a745e5c4ebb88ad908b2508b8e73051033ac4b2c49a814c47a58"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_pool_proj.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_pool_proj.jpg",
+      "bytes": 818313,
+      "sha256": "720c899ec004ede307aa3dd6c8293de7fecb5af25c0f3b2dcd2ca57d97aa8e5f"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_5x5.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5.jpg",
+      "bytes": 858452,
+      "sha256": "2beff10bf3e21802f7c9b21d7650598f05f50bde12eb94d4dc690f84ff361a00"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a_3x3.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3.jpg",
+      "bytes": 870761,
+      "sha256": "3f6bc0d08d3d25155534217b2e0969f99b3c31be9dc8e50063abaf0b483b2eae"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3a.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3a.jpg",
+      "bytes": 878784,
+      "sha256": "c87f33a4596edffb1baa7f1f863a2db1becdbc31befe565bce71e73fce17ede6"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_3b.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_3b.jpg",
+      "bytes": 868613,
+      "sha256": "2c376ddc41142005a5938144c80a8ff3bd2a23a6e5dcf46b5efadd3959298966"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_pool.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_pool.jpg",
+      "bytes": 811753,
+      "sha256": "a6e2afd59d699df9995701edb57f132f8f4aee557c6057e3d61349e026d74084"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_5x5_reduce.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5_reduce.jpg",
+      "bytes": 815096,
+      "sha256": "7bae73274d6ae16c342ae3d24ab539e5955db21468eb7ad6a024dafa65188a8e"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_1x1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_1x1.jpg",
+      "bytes": 813780,
+      "sha256": "3f46dccbf7d79a3d619a0518b4fe6f35f94426b59277ef78b87e88222b92bf0b"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_3x3_reduce.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3_reduce.jpg",
+      "bytes": 817835,
+      "sha256": "4b8bf1876d74954b389ec376e625d31ccbeb8fdd378ebe2eb1bc14ef85a6e21d"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_pool_proj.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_pool_proj.jpg",
+      "bytes": 813687,
+      "sha256": "a52619a704dc49003f30ac60a458f93c6e5ef13af072fe9aa178e1a4cef40ec1"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_5x5.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5.jpg",
+      "bytes": 815338,
+      "sha256": "01ddb6b090d654e692135d8ebb59e8651a82ac7c8ca9e4086cf465182a7841b1"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a_3x3.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3.jpg",
+      "bytes": 813136,
+      "sha256": "12badbbe7db8f063f269248876a0e24367b7236379ad5f976170a0b8b1c3fb16"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4a.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4a.jpg",
+      "bytes": 819729,
+      "sha256": "a2f10bb7fc44b079d165f36293530cf81aea51112f00443766f033c5d9a4aa6b"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4b_pool.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4b_pool.jpg",
+      "bytes": 810197,
+      "sha256": "64f3039ce8f660dd7fb61eb3af4475a496a5fbfca1451a29e9cbce5eca8993e2"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4b.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4b.jpg",
+      "bytes": 813528,
+      "sha256": "24fca015b73ee5347437e2044456d246cb62a641f97191924acafd8cf440dfd7"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4c.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4c.jpg",
+      "bytes": 812686,
+      "sha256": "35605c6fa145a32d19aa3ea2b467f65511906ba0570554dac23e0e7599d9c9e1"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4d.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4d.jpg",
+      "bytes": 814883,
+      "sha256": "fa97df32577d8603129ba93571952c9a2a5a9d93ec3b3161f659d76661e8702d"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_4e.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_4e.jpg",
+      "bytes": 816220,
+      "sha256": "5917a8fe10f9cb26f85ae8aa374c30ca72664dd9e0bca8f4fe500778981faad7"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_5a1.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_5a1.jpg",
+      "bytes": 807283,
+      "sha256": "00fdb81c50cc694bb1697afcbdcf0a8abb3969ce35c36a5ae9063b96ee283f6f"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/steve-e-deep-inception_5b.jpg",
+      "file": "assets/wordpress/2015/07/steve-e-deep-inception_5b.jpg",
+      "bytes": 823381,
+      "sha256": "4789a44f27f75d7380bff0de9a97fe2bd937a9cd085ef5664e6344a595778fb2"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/tmp10.jpg",
+      "file": "assets/wordpress/2015/07/tmp10.jpg",
+      "bytes": 1134542,
+      "sha256": "31a87511c33ad596309e2562a0a07e7cf8674e6829ec579d03b508ab2e5dec7b"
+    },
+    {
+      "source": "https://abewrites.files.wordpress.com/2015/07/tmp.pdf",
+      "file": "assets/wordpress/2015/07/tmp.pdf",
+      "bytes": 29432,
+      "sha256": "600f03b736021d03bd3fb76fd96f4559c87a5f065fc1f6fcaee9156ca15a4d72"
+    }
+  ]
+}

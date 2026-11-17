@@ -1,0 +1,308 @@
+---
+title: "Deep Dreaming at Vixlet"
+date: "2015-07-09"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2015/07/09/deep-dreaming-at-vixlet/index.html
+---
+
+Last weekend I started playing around with [Deep Dreams, an artistic,
+surreal application of Google’s deep belief neural
+networks](http://googleresearch.blogspot.ch/2015/06/inceptionism-going-deeper-into-neural.html)
+and applied it to a picture from my colleague Steve Eldridge of Vixlet
+HQ’s inspiring view of downtown LA:
+
+[![steve-e](/assets/wordpress/2015/07/steve-e.jpg)](/assets/wordpress/2015/07/steve-e.jpg)
+
+Here’s what it looks like at the deepest layer of the deep dream neural
+network (I’ll explain what that means shortly).
+
+[![steve-e-deep-inception_5a](/assets/wordpress/2015/07/steve-e-deep-inception_5a.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_5a.jpg)
+
+Although there is [a tutorial
+already](https://github.com/google/deepdream/blob/master/dream.ipynb), I
+thought I’d make a blog post about it because I had to make some
+modifications to the code there and people were asking about how I got
+it working.
+
+First of all, the part that I had to modify was the image loading
+commands.  The tutorial used ipython notebooks, which I’m not very
+famliar with. Also they loaded the image into a numpy array via PIL,
+python image library.  I’m not sure if it was due to PIL or ipython
+notebooks, but this didn’t work for me. Instead, I loaded the image to a
+numpy array via opencv (called cv2 in python).  That’s an obvious thing
+to try if you’re familiar with computer vision in python, but otherwise
+it would be a place to get stuck.  So basically, I used the code from
+the tutorial but added it to a single script and changed a couple of
+lines:
+
+``` python
+#!/usr/bin/env python
+
+# imports and basic notebook setup
+from cStringIO import StringIO
+import numpy as np
+import scipy.ndimage as nd
+import PIL.Image
+import sys
+from IPython.display import clear_output, Image, display
+from google.protobuf import text_format
+
+import caffe
+
+def showarray(a, fmt='jpeg'):
+    a = np.uint8(np.clip(a, 0, 255))
+    f = StringIO()
+    PIL.Image.fromarray(a).save(f, fmt)
+    display(Image(data=f.getvalue()))
+
+model_path = '../caffe/models/bvlc_googlenet/' # substitute your path here
+net_fn   = model_path + 'deploy.prototxt'
+param_fn = model_path + 'bvlc_googlenet.caffemodel'
+
+# Patching model to be able to compute gradients.
+# Note that you can also manually add "force_backward: true" line to "deploy.prototxt".
+model = caffe.io.caffe_pb2.NetParameter()
+text_format.Merge(open(net_fn).read(), model)
+model.force_backward = True
+open('tmp.prototxt', 'w').write(str(model))
+
+net = caffe.Classifier('tmp.prototxt', param_fn,
+                       mean = np.float32([104.0, 116.0, 122.0]), # ImageNet mean, training set dependent
+                       channel_swap = (2,1,0)) # the reference model has channels in BGR order instead oF\
+ RGB
+
+# a couple of utility functions for converting to and from Caffe's input image layout
+def preprocess(net, img):
+    return np.float32(np.rollaxis(img, 2)[::-1]) - net.transformer.mean['data']
+def deprocess(net, img):
+    return np.dstack((img + net.transformer.mean['data'])[::-1])
+ 
+def make_step(net, step_size=1.5, end='inception_4c/output', jitter=32, clip=True):
+    '''Basic gradient ascent step.'''
+
+    src = net.blobs['data'] # input image is stored in Net's 'data' blob
+    dst = net.blobs[end]
+
+    ox, oy = np.random.randint(-jitter, jitter+1, 2)
+    src.data[0] = np.roll(np.roll(src.data[0], ox, -1), oy, -2) # apply jitter shift
+
+    net.forward(end=end)
+    dst.diff[:] = dst.data  # specify the optimization objective
+    net.backward(start=end)
+    g = src.diff[0]
+    # apply normalized ascent step to the input image
+    src.data[:] += step_size/np.abs(g).mean() * g
+
+    src.data[0] = np.roll(np.roll(src.data[0], -ox, -1), -oy, -2) # unshift image
+
+    if clip:
+        bias = net.transformer.mean['data']
+        src.data[:] = np.clip(src.data, -bias, 255-bias)
+
+def deepdream(net, base_img, iter_n=10, octave_n=4, octave_scale=1.4, end='inception_4c/output', clip=True, **step_params):
+    # prepare base images for all octaves
+    octaves = [preprocess(net, base_img)]
+    for i in xrange(octave_n-1):
+        octaves.append(nd.zoom(octaves[-1], (1, 1.0/octave_scale,1.0/octave_scale), order=1))
+
+    src = net.blobs['data']
+    detail = np.zeros_like(octaves[-1]) # allocate image for network-produced details
+    for octave, octave_base in enumerate(octaves[::-1]):
+        h, w = octave_base.shape[-2:]
+        if octave > 0:
+            # upscale details from the previous octave
+            h1, w1 = detail.shape[-2:]
+            detail = nd.zoom(detail, (1, 1.0*h/h1,1.0*w/w1), order=1)
+
+        src.reshape(1,3,h,w) # resize the network's input image size
+        src.data[0] = octave_base+detail
+        for i in xrange(iter_n):
+            make_step(net, end=end, clip=clip, **step_params)
+
+            # visualization
+            vis = deprocess(net, src.data[0])
+            if not clip: # adjust image contrast if clipping is disabled
+                vis = vis*(255.0/np.percentile(vis, 99.98))
+            showarray(vis)
+            print octave, i, end, vis.shape
+            clear_output(wait=True)
+
+        # extract details produced on the current octave
+        detail = src.data[0]-octave_base
+    # returning the resulting image
+    return deprocess(net, src.data[0])
+
+# this is my humble addition/modification
+import cv2
+if not len(sys.argv) > 2: # check arguments to script
+    print "Usage: ./deepdream.py input_file output_file [level]"
+    sys.exit()
+layer = "inception_4c/output"
+if len(sys.argv) == 4:    # set default end/layer
+    layer = sys.argv[3]
+img = cv2.imread(sys.argv[1])
+dd = deepdream(net, img, end=layer)
+cv2.imwrite(sys.argv[2], dd)
+```
+
+[Original code on GitHub
+Gist](https://gist.github.com/abecode/e7f0c9ab4e284d3fc9b7)
+
+The core python library that performs the neural network operations is
+Caffe. If the code above doesn’t work, it could be because I used a
+version of Caffe that I compiled to make use of the NVidia Cuda
+libraries.  I don’t think that is necessary, but I had been using that
+to speed up unrelated computer vision work I’ve been doing.
+
+Now I’ll explain a little bit about the inception neural network that
+deep dreams is based on.  The neural network is visualized below.
+
+[![googlenet](/assets/wordpress/2015/07/googlenet.jpg)](/assets/wordpress/2015/07/googlenet.jpg)
+
+You may want to open the pdf (
+
+[Click to access tmp.pdf](/assets/wordpress/2015/07/tmp.pdf)
+
+) to see it in more detail.  The left is the lower level of the neural
+network that processes the image input and the right is the deeper level
+of the neural network.  The intermediate levels range from the shallow
+end which identifies edges and shapes, to patterns, and then to patches
+and objects in the deep end.  The “end” named argument to the deepdream
+function specifies what layer to output, given the input image.  Below
+are a selection of various layers from  shallow to deep:
+
+conv1/7x7_s2
+
+[![steve-e-deep-conv1](/assets/wordpress/2015/07/steve-e-deep-conv1.jpg)](/assets/wordpress/2015/07/steve-e-deep-conv1.jpg) 
+
+pool1/3x3_s2
+
+[![steve-e-deep-pool1](/assets/wordpress/2015/07/steve-e-deep-pool1.jpg)](/assets/wordpress/2015/07/steve-e-deep-pool1.jpg)
+
+pool1/norm1
+
+[![steve-e-deep-pool1norm1](/assets/wordpress/2015/07/steve-e-deep-pool1norm1.jpg)](/assets/wordpress/2015/07/steve-e-deep-pool1norm1.jpg)
+
+conv2/3x3_reduce
+
+[![steve-e-deep-conv2_3x3_reduce](/assets/wordpress/2015/07/steve-e-deep-conv2_3x3_reduce.jpg)](/assets/wordpress/2015/07/steve-e-deep-conv2_3x3_reduce.jpg)
+
+conv2/3×3
+
+[![steve-e-deep-conv2_3x3](/assets/wordpress/2015/07/steve-e-deep-conv2_3x3.jpg)](/assets/wordpress/2015/07/steve-e-deep-conv2_3x3.jpg)
+
+conv2/norm2
+
+[![steve-e-deep-conv2_norm2](/assets/wordpress/2015/07/steve-e-deep-conv2_norm2.jpg)](/assets/wordpress/2015/07/steve-e-deep-conv2_norm2.jpg)
+
+pool2/3x3_s2
+
+[![steve-e-deep-pool2_3x3_s2](/assets/wordpress/2015/07/steve-e-deep-pool2_3x3_s2.jpg)](/assets/wordpress/2015/07/steve-e-deep-pool2_3x3_s2.jpg)
+
+inception_3a/pool
+
+[![steve-e-deep-inception_3a_pool](/assets/wordpress/2015/07/steve-e-deep-inception_3a_pool.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_pool.jpg)
+
+inception_3a/5x5_reduce
+
+[![steve-e-deep-inception_3a_5x5_reduce](/assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5_reduce.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5_reduce.jpg)
+
+inception_3a/1×1
+
+[![steve-e-deep-inception_3a_1x1](/assets/wordpress/2015/07/steve-e-deep-inception_3a_1x1.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_1x1.jpg)
+
+inception_3a/3x3_reduce
+
+[![steve-e-deep-inception_3a_3x3_reduce](/assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3_reduce.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3_reduce.jpg)
+
+inception_3a/pool_proj
+
+[![steve-e-deep-inception_3a_pool_proj](/assets/wordpress/2015/07/steve-e-deep-inception_3a_pool_proj.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_pool_proj.jpg)
+
+inception_3a/5×5
+
+[![steve-e-deep-inception_3a_5x5](/assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_5x5.jpg)
+
+inception_3a/3×3
+
+[![steve-e-deep-inception_3a_3x3](/assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a_3x3.jpg)
+
+inception_3a/output
+
+[![steve-e-deep-inception_3a](/assets/wordpress/2015/07/steve-e-deep-inception_3a.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3a.jpg)
+
+inception_3b/output
+
+[![steve-e-deep-inception_3b](/assets/wordpress/2015/07/steve-e-deep-inception_3b.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_3b.jpg)
+
+inception_4a/pool
+
+[![steve-e-deep-inception_4a_pool](/assets/wordpress/2015/07/steve-e-deep-inception_4a_pool.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_pool.jpg)
+
+inception_4a/5x5_reduce
+
+[![steve-e-deep-inception_4a_5x5_reduce](/assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5_reduce.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5_reduce.jpg)
+
+inception_4a/1×1
+
+[![steve-e-deep-inception_4a_1x1](/assets/wordpress/2015/07/steve-e-deep-inception_4a_1x1.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_1x1.jpg)
+
+inception_4a/3x3_reduce
+
+[![steve-e-deep-inception_4a_3x3_reduce](/assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3_reduce.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3_reduce.jpg)
+
+inception_4a/pool_proj
+
+[![steve-e-deep-inception_4a_pool_proj](/assets/wordpress/2015/07/steve-e-deep-inception_4a_pool_proj.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_pool_proj.jpg)
+
+inception_4a/5×5
+
+[![steve-e-deep-inception_4a_5x5](/assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_5x5.jpg)
+
+inception_4a/3×3
+
+[![steve-e-deep-inception_4a_3x3](/assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a_3x3.jpg)
+
+inception_4a/output
+
+[![steve-e-deep-inception_4a](/assets/wordpress/2015/07/steve-e-deep-inception_4a.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4a.jpg)
+
+inception_4b/pool
+
+[![steve-e-deep-inception_4b_pool](/assets/wordpress/2015/07/steve-e-deep-inception_4b_pool.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4b_pool.jpg)
+
+inception_4b/output
+
+[![steve-e-deep-inception_4b](/assets/wordpress/2015/07/steve-e-deep-inception_4b.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4b.jpg)
+
+inception_4c/output
+
+[![steve-e-deep-inception_4c](/assets/wordpress/2015/07/steve-e-deep-inception_4c.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4c.jpg)
+
+inception_4d/output
+
+[![steve-e-deep-inception_4d](/assets/wordpress/2015/07/steve-e-deep-inception_4d.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4d.jpg)
+
+inception_4e/output
+
+[![steve-e-deep-inception_4e](/assets/wordpress/2015/07/steve-e-deep-inception_4e.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_4e.jpg)
+
+inception_5a/output
+
+[![steve-e-deep-inception_5a](/assets/wordpress/2015/07/steve-e-deep-inception_5a1.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_5a1.jpg)
+
+inception_5b/output
+
+[![steve-e-deep-inception_5b](/assets/wordpress/2015/07/steve-e-deep-inception_5b.jpg)](/assets/wordpress/2015/07/steve-e-deep-inception_5b.jpg)
+
+ 
+
+Here’s one where I ran the deep dream several times:
+
+[![tmp10](/assets/wordpress/2015/07/tmp10.jpg)](/assets/wordpress/2015/07/tmp10.jpg)
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2015/07/09/deep-dreaming-at-vixlet/).

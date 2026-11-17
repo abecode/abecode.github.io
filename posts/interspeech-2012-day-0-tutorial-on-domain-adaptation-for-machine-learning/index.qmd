@@ -1,0 +1,25 @@
+---
+title: "Interspeech 2012, day 0: tutorial on domain adaptation for machine learning"
+date: "2012-09-09"
+author: Abe Kazemzadeh
+categories: ["research", "Uncategorized", "interspeech2012"]
+aliases:
+  - /2012/09/09/interspeech-2012-day-0-tutorial-on-domain-adaptation-for-machine-learning/index.html
+---
+
+I started the interspeech conference with a tutorial on domain
+adaptation for machine learning. The main theme of the 3 hour tutorial
+was to present machine learning and speech processing techniques in the
+same unified taxonomy, which was 3 categories of methods: instance-based
+methods, feature transformation-based methods, and model-based methods.
+Fei Sha (USC) and Brian Kingsbury (IBM) were the two presenters. One of
+the strengths of this tutorial was the comprehensive references given,
+without a self-promotion bias. It was cool to see my former labmate
+Abhinav Sethy and classmate Hal Daumé get prominent citations. One thing
+I’ll be looking into more is the Blitzer reference about domain
+adaptation for sentiment analysis. The slides are online at
+<https://rainflower.usc.edu/wiki/projects/is2012tutorial/Interspeech_2012_Tutorial.html>
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/09/09/interspeech-2012-day-0-tutorial-on-domain-adaptation-for-machine-learning/).

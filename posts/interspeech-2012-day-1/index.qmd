@@ -1,0 +1,56 @@
+---
+title: "Interspeech 2012, day 1"
+date: "2012-09-10"
+author: Abe Kazemzadeh
+categories: ["emotion twenty questions", "research", "Uncategorized", "interspeech2012"]
+aliases:
+  - /2012/09/10/interspeech-2012-day-1/index.html
+---
+
+Today, I missed the beginning of the keynote speaker b/c I was finding
+where my poster needed to go, so I didn’t follow much of the part that I
+saw.  Actually I skipped most of the morning presentations so I could
+practice.  I did go to the welcome ceremony and they had a sort of
+introductory keynote  that was very interesting. The speaker, Rex Ziak,
+is a Lewis and Clark scholar and he gave presentation about how language
+and translation played a big role in Lewis and Clark’s expedition from
+Saint Louis to the West Coast.  Supposedly Thomas Jefferson, who
+commissioned the expedition, also instituted a linguistic component of
+the mission: to collect data on Native American languages by building a
+Swadesh list of common words.  Unfortunately, the story ended in
+disaster.  When Jefferson retired and returned to his estate to study
+the linguistic data, a thief had ransacked the chest full of papers and,
+realizing that it had no monetary value, dumped the contents into a
+river.
+
+Coincidentally, my paper was also about collecting ethnographic data,
+but using a more computational methodology and only in English and only
+about emotion words.  For my presentation, I got a fair amount of people
+interested in my poster
+([emo20qPosterForInterspeech2012](/assets/wordpress/2012/09/emo20qposterforinterspeech2012.pdf) )
+about recent work on [emo20q](http://sail.usc.edu/emo20q "emo20q").  
+One of the interesting things is seeing who knows about the game of
+twenty questions.  Sometimes, I described the experiment by explaining
+emo20q as “twenty questions played with emotion words instead of
+physical objects”.  The problem was that some people had never heard of
+twenty questions (it is a very international conference).  So far, I
+couldn’t generalize about which cultures have the twenty questions game
+and which don’t, but it seemed like Chinese and Germans don’t have the
+game, but it could also vary person to person.  I tried googling for
+“which cultures play twenty questions” and I found a fun but
+unrelated [youtube
+link](http://www.youtube.com/watch?v=aV5LAXEERzs "youtube link").  Other
+than that, I didn’t find any information on line.
+
+One talk that I found interesting was “Prosodic Entrainment in an
+Information-Driven Dialog System”.  I liked this one b/c it not only
+tried to measure different types of entrainment, but used them to modify
+the dialog system behavior (mainly to correct error states caused by
+hyper articulation).  There was also a paper about using the semantic
+web for unsupervised natural language semantic parsing.  This seemed
+interesting in theory but I didn’t really  get into the presentation, so
+perhaps I’ll be more entertained by reading the paper.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/09/10/interspeech-2012-day-1/).

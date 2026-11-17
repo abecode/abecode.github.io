@@ -1,0 +1,64 @@
+---
+title: "Emotion Words, Sign Language, and the Mirror Neuron Hypothesis"
+date: "2012-01-30"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2012/01/30/emotion-words-sign-language-and-the-mirror-neuron-hypothesis/index.html
+---
+
+I have been studying how people describe emotions in language for my
+thesis work, and this semester I have been taking Prof. Arbib’s class on
+his new book “How the Brain Got Language: the Mirror System Hypothesis”.
+ The main idea of this course is that human language ability is
+originally derived from evolution of manual motor skills rather than
+from vocal behavior.  In this view, parts of the brain that were used
+for manual gestures like reaching, grasping, and manipulating objects
+took over control of the vocal system.  Some evidence from this comes
+from monkey and apes neurons as well as imaging humans an observing
+clinical cases of human brain damage.   Also, there is the phenomenon of
+sign language, which is in fact a language that doesn’t use the
+vocal apparatus.   One example Prof. Arbib gave was how to sign a color,
+which uses the letters from the color’s English spelling (though orange
+uses the same symbol as orange the fruit and where the letter-sign is
+executed seems to be important–to distinguish blue and brown).
+
+This made me wonder how emotions are signed.  I asked my mom about it
+because she has a deaf neighbor who she learns from and also she uses
+signs for the mentally disabled kids on her bus.  As opposed to colors,
+emotions are not as abstract to sign since emotions are easier to convey
+with gestures and also one can use facial expressions in signs.  My mom
+isn’t fluent in sign language but she said that the word for happy is
+signed by pointing upward on the corners of the lips, and sad is signed
+by making tear gestures down from the eyes.
+
+I also found some links about sign language for emotions online.  Here’s
+an introductory video
+<http://www.wonderhowto.com/how-to-say-emotion-words-with-sign-language-226542/> that
+shows two other signs for happy (wafting the hand upward under the chin)
+and sad (moving the hands downward on along the face). These are a
+little less obvious but which also incorporate facial expressions.
+ Also, the sign for “emotion” is interesting: a gesture around the face
+similar to sad but not going down as low, more side to side and the word
+for “feeling” seems to be like “happy” but more with the fingers than
+the whole hands.  Of course this is just my first impression from
+watching videos and I’m not sure I’m segmenting the gestures correctly
+or recognizing what aspects are significant.  Here are some more
+videos: <http://www.ehow.com/videos-on_7605_american-sign-language-emotion-words.html>  .
+ One funny one is that “boring” signed by pretending to pick the nose,
+signing the word “dry”, or twirling the fingers in front of the face
+while rolling the eyes  to express distraction.  Jealous and envious
+seem to be related to the sign for drooling.  Motivated is signed by
+rubbing hands together like one is eager to do something.
+
+Although I just started looking into these issues it seems like signing
+emotions is at least as expressive as using words and many of the signs
+seems like people would partially understand them regardless of whether
+they knew sign language or not.  I’m not sure if this would be an
+evidence for the mirror neuron hypothesis but it seems plausible given
+manual gestures appear to be a good way to communicate about one’s
+internal states.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2012/01/30/emotion-words-sign-language-and-the-mirror-neuron-hypothesis/).

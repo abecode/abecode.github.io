@@ -1,0 +1,76 @@
+---
+title: "Vacation Metrics"
+date: "2013-09-11"
+author: Abe Kazemzadeh
+categories: ["Uncategorized"]
+aliases:
+  - /2013/09/11/vacation-metrics/index.html
+---
+
+When I stepped down from my former position as chief technology officer
+at Annenberg Innovation Lab, I had many plans for how I would use my
+free time before I found a new job.  It’s not completely a vacation free
+from cares.  I still need to find a new job, learn some new skills,
+follow up on some publications, and sail to Catalina Island, all of
+which require some work.  Since I’m not getting paid for it, I’m
+considering it vacation. Still, if I get too laid back I won’t do all
+that I had planned, so I decided to set some objectives to measure my
+vacation.  Here are my objectives and how I can measure their successful
+completion.
+
+- **Get a job.**  This is my primary goal for my vacation and if I don’t
+  find a job in about two months I would consider this vacation a
+  failure.  **Metrics:**  right now I’m looking for something that is
+  primarily interesting and fun work, that is in either LA, the Bay
+  Area, or California in general, working with good people, that ideally
+  has something to do with what I studied (natural language processing),
+  and that pays well (in that order). **Outcome:**  in progress.
+- **Get in touch with friends.** Luckily one of the first things I did
+  on my vacation was to go to my high school friend, Scott Hagen’s,
+  wedding so I reconnected with a lot of friends then and while I was
+  home in Wisconsin and Minnesota.  **Metrics:** the main metric is to
+  get in touch with as many friends as possible and a secondary
+  consideration is being able to meet in person versus just by email or
+  phone.  I guess a bonus point would be if getting in touch with a
+  friend helped land a job. **Outcome:** in progress.
+- **Sail to Santa Catalina Island.**  Since I’ve had a boat (about a
+  year and a half), Elly, my fiancee, and I been studying to made the 30
+  nautical mile trip from Marina Del Rey.  Sailing on the ocean is a lot
+  more involved than on lakes so I’ve been cautious but now that I have
+  more time to read up and practice I’ve been itching to make the trip. 
+  **Metrics:** safely going and returning from Catalina, time taken, and
+  amount of fun had.  **Outcome:**  Done!  Last weekend Elly and I
+  successfully made it to Isthmus/Two Harbors.  The outward-bound trip
+  took 10 hours, which was a bit long because we had to divert to
+  Redondo/King Harbor to refuel due to calm winds in the morning.  In
+  the afternoon the wind and swell picked up a lot and we got a bit wet
+  from spray.  On the way back, it took 7 hours because we were more
+  experience and we were in a hurry to beat the mid afternoon turbulence
+  if it came back.   It was calmer on the way back and we had the
+  company of many boats and dolphins.  Overall, it was fun despite some
+  white knuckles and white cap waves.
+- **Publications.**  While I was working, it was hard to keep up with
+  publishing my dissertation research, so I’m hoping to have time to do
+  that over the vacation. **Metrics:** finish the one paper I have under
+  revisions and start at least one more. **Outcome:** in progress.
+- **Learning new skills.**  One of the things I’ve been wanting to learn
+  is Ruby and Ruby on Rails.  I also want to refresh my knowledge of web
+  technologies about the new additions to html and css and new
+  frameworks for javascript.  **Metric:** working demos of some projects
+  used to learn these new skills.  **Outcome:** in progress.
+- **Getting into shape.**  When things get busy, for me it’s often
+  exercise that gets put on the back burner.  While I’m on vacation I
+  want to exercise more and loose some weight. **Metrics:**  frequency
+  of exercise, amount of weight lost. **Outcome:** in progress.
+- **Reading. **I have a bunch of books that I’ve been reading that I
+  need to finish and others that I want to start. **Metrics:** how many
+  of the books I want to read that I actually read. **Outcome:** in
+  progress.
+
+ 
+
+<http://linguistlist.org/jobs/get-jobs.cfm?id=18618769>
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2013/09/11/vacation-metrics/).

@@ -1,0 +1,91 @@
+---
+title: "Emotion 20 Questions and the Mild Anguish of Presque-Vu"
+date: "2011-05-03"
+author: Abe Kazemzadeh
+categories: ["cognitive science", "emotion twenty questions", "emotions", "language", "research"]
+aliases:
+  - /2011/05/03/emotion-twenty-questions-and-the-mild-anguish-of-presque-vu/index.html
+---
+
+Most people are familiar with the feeling of when a word is “on the tip
+of one’s tongue”, also known as *presque-vu*.The feeling of *presque-vu*
+has been described as [“mild
+anguish”](http://en.wikipedia.org/wiki/Tip_of_the_tongue "tip of the tongue") 
+, quite the evocative oxymoron.   Unlike it’s cousin, *deja-vu*  (
+*deja*=”already”, *vu*=”seen”, and *presque*=”almost”), *presque-vu* can
+be simulated in an experimental setting.  The familiar game of twenty
+questions can be seen as a way of experimentally simulating *presque-vu*
+because in the game we know the meaning of the word, but not the word
+itself.  Why would someone want to simulate *presque-vu * in an
+experiment?  One reason is that it makes it possible to consider the
+meaning of a word as somewhat detached from the word itself.  This
+meaning detached from words can be seen as what’s going on in your mind
+when you think to yourself.  Ordinarily I go about my day without
+wondering what’s going on in my mind, but when something like
+*presque-vu* occurs, I wrack my brain to try to find the word that I’m
+thinking about.  Sometimes I’ll run through words that are similar in
+meaning, or other times I’ll have a nagging suspicion that it starts
+with a specific letter. Even though *presque-vu * might be nothing more
+than a neural short circuit, it’s a troubling one and makes me pause to
+wonder what’s really going on inside my head.
+
+What’s going on in a person’s mind during *presque-vu* is called
+*lexical access*.  *Presque-vu* is a lexical access error like Freudian
+slips and Spoonerisms.  Whereas Freudian slips and Spoonerisms result in
+the wrong word coming out, *presque-vu* results in nothing coming out. 
+*Presque-vu* is one of the reasons why I think that the speech that
+comes out of our mouths is not just an elaborate statistical pattern,
+but something that results from actual, conscious thought.  Ironically
+though, in the case of *presque-vu* the only thing that comes out of our
+mouths is the big, fat, empty set, i.e., nothing.  In lieu of a word
+being spoken, we are left with only our own thought and a slightly
+troubled feeling.
+
+Why does *presque-vu * leave us feeling troubled?  Imagine an extreme
+version of *presque-vu*: anomic aphasia.  Anomic aphasia is brain
+disorder of Broca’s area that is due to stroke, tumor, or injury and
+results in losing the ability to use  words, either in general or some
+broad class of words like verbs or names.    In the worst case, this
+type of aphasia could leave a patient able to think but not able to
+talk, i.e., trapped in their body but unable to communicate.  If it is
+frustrating to not be able to come up with a word, imagine suffering
+aphasia from a brain disorder that affects Broca’s area of the brain.
+According the an account of John Horan, a stroke victim, [“It was four
+weeks after his stroke before he spoke his first word – which,
+understandably, was
+f\*\*\*”](http://www.timesonline.co.uk/tol/life_and_style/health/article3730370.ece "aphasia").
+
+Anomic aphasia, it is reported, can affect specific categories of
+words.  Imagine now that you had a stroke and you lost all ability to
+recall and use emotion words, but the rest of your speech and thought
+abilities remained intact.  You might think that your ability to
+describe your feelings to other people would be severely curtailed.  But
+would it?  I think it would be possible to communicate the same
+information using paraphrases that don’t directly refer to any emotion
+words.  There would still be a frustrating feeling and talking about
+emotions would be a roundabout ordeal.  But I think it’s an open
+question whether emotion words are absolutely indispensable  or if  we
+could do without them in a roundabout way.
+
+To make this thought experiment as simple as possible, imagine that all
+you can say is yes or no and your goal is to communicate your current
+emotion to a fellow human being.  This might be excruciatingly
+frustrating, but it would still be much better than being trapped in a
+mute body like a mummy.  The question is whether by answering yes or no
+you can communicate an arbitrary emotion to another person.  The answer
+is yes, with probability 0.88462 and on average 12.04 questions.
+
+How do I know this, you might ask? The answer is simple: [Emotion Twenty
+Questions](http://sail.usc.edu/~kazemzad/emo20q "Emotion Twenty Questions (EMO20Q)")
+(EMO20Q).  Recently I have undertaken an experiment that aims to play
+the familiar game of twenty questions with emotions instead of arbitrary
+objects.  So far I’ve collected a total of 26 matches, 23 of which
+terminated in satisfactory emotion communication, i.e., 88.462%.  When
+the ones that did not terminate satisfactorily are averaged in as 20
+questions, the average was 12.04 questions.  I’m currently working on
+collecting more data and refining my experiments, so please check back
+for more details in the future.
+
+---
+
+Originally published on [abewrites](https://abewrites.wordpress.com/2011/05/03/emotion-twenty-questions-and-the-mild-anguish-of-presque-vu/).
